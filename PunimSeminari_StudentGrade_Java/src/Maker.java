@@ -5,7 +5,7 @@
  * @author Gentrit.Hoxha 
  *
  */
-public class Maker{
+public class Maker {
    public int nrStudentave=100;
    public  int     [] id      = new int     [nrStudentave];
    private String  [] emri    = new String  [nrStudentave];
@@ -99,7 +99,7 @@ public class Maker{
    /**Metoda Average sherben per te shikuar noten Mesatare*/
    public String Average() {
    	
-      int a= inp.getNr("Sheno Id e Studentit per tia shiquar noten Mesatare");
+      int a= inp.getNr("Sheno ID e studentit te cilit deshiron te ja shikosh noten mesatare ");
       if(stud[a-1]==null) {return "Studenti nuk Ekziston";}
       return stud[a-1].getFullName()+" "+((stud[a-1].notat[0]+stud[a-1].notat[1]+stud[a-1].notat[2]+stud[a-1].notat[3]+stud[a-1].notat[4])/stud[a-1].notat.length)+
          	"." + ((stud[a-1].notat[0]+stud[a-1].notat[1]+stud[a-1].notat[2]+stud[a-1].notat[3]+stud[a-1].notat[4])%stud[a-1].notat.length);
@@ -108,7 +108,7 @@ public class Maker{
 	
    /**Metoda deleteStudent sherben per te larguar nje Student nga List*/
    public void deleteStudent() {
-      int a= inp.getNr("Sheno Id e Studentit per fshir")-1;
+      int a= inp.getNr("Shenoni ID e studentit te cilin deshironi ta largoni nga Lista")-1;
       for(int i = 0; i <stud.length; i++)
       {
          if(i==a) {
